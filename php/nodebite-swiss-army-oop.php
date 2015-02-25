@@ -33,7 +33,7 @@ spl_autoload_register(function ($class) {
     );
 
     foreach($variants as $variant){
-      $variants[] = "classes/".$variant;
+      $variants[] = "../php/classes/".$variant;
     }
 
     foreach($variants as &$variant){

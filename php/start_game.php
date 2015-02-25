@@ -17,11 +17,15 @@ include_once('nodebite-swiss-army-oop.php');
 
 
 	unset($players);
-	unset($challenges);
+	unset($challenge);
 	unset($currentchallenge);
 	unset($tools);
 
 
 
-$nylarthotep = new Challenge("Nylarthotep");
- 
+$testChallenge = new Challenge("testChallenge", "strength");
+
+$testCharacter = new Character("Mortimer");
+
+$testTool = new Tool("Tool", "Tooling");
+
