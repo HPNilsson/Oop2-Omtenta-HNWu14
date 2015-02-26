@@ -1,11 +1,14 @@
 <?php
 
 class Tool extends Base {
-  public $description;
-  public $skills;
+  public $name;
+  public $statType;
+  public $statValue;
 
-  public function __construct($description,$skills){
-    $this->description = $description;
-    $this->skills = $skills;
+  public function __construct($name,$statType,$statValue){
+    $this->name = $name;
+    $this->statType = $statType;
+    $this->statValue = $statValue;
   }
 }
+
