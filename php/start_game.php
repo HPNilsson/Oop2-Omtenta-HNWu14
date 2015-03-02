@@ -22,10 +22,6 @@ include_once('nodebite-swiss-army-oop.php');
 	unset($ds->tools);
 
 
-
-$testChallenge = new Challenge("testChallenge", "strength");
-
-
 $Mortimer = new Thief ("Mortimer");
 $Pierro = new Acrobat ("Pierro");
 $Oggnogg = new Warrior ("Oggnogg");
@@ -35,7 +31,7 @@ $Claire = new Cleric ("Claire");
 	$ds->players[] = New $player_class($player_name, $ds);
 
 //then make random bots (can also be done with a while loop)
-	$available_classes = array("Thief", "Acrobat", "Warrior" "Cleric");
+	$available_classes = array("Thief", "Acrobat", "Warrior", "Cleric");
 	for ($i=0; $i < count($available_classes); $i++) { 
 	  if ($available_classes[$i] != $player_class) {
 	    $ds->players[] = new $available_classes[$i]("Bot".$i, $ds);
@@ -162,3 +158,10 @@ $challenge = array(
 			),
 		),
 );
+
+
+// $echo_everythang = array(
+//   "players" => $ds->players,
+//   "tools" => $ds->tools,
+// );
+// echo(json_encode($echo_everythang));

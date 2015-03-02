@@ -3,15 +3,15 @@
 class Challenge extends Base {
 
 
-  protected $description;
-  protected $skill;
-  protected $skillValue;
+  public $description;
+  public $skill;
+  public $skillValue;
 
 
  public function __construct($description,$skill,$skillValue){
   $this->description = $description;
   $this->skill = $skill;
-  $this->skillValue = $skillValue
+  $this->skillValue = $skillValue;
  }
 
 	
